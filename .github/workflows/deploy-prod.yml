@@ -21,7 +21,6 @@ jobs:
               
       - name: Run npm install, build
         run: |        
-          npm cache clean --force
           jfrog rt npmci ga-npm
           npm run build
           jfrog rt u "public/" ga-generic/public/          
